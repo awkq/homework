@@ -1,0 +1,43 @@
+html {
+  font-family: sans-serif;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  border-bottom: 1px solid black;
+  padding: 15px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.blackbox {
+  height: 50px;
+  width: 50px;
+  background-color: black;
+}
+
+ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  gap: 15px;
+}
+
+a {
+  color: inherit;
+}
+
+.num {
+  text-decoration: none;
+}
