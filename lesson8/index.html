@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Форма</title>
+  </head>
+  <body>
+    <form class="form">
+      <fieldset class="form-group">
+        <legend class="form-group-title">Регистрация</legend>
+
+        <label class="label" for="name">Ваше Имя</label
+        ><input
+          class="input"
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Имя"
+          required
+        />
+
+        <label class="label" for="email">Ваша почта</label
+        ><input
+          class="input"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Адрес почты"
+          required
+        />
+
+        <label class="label" for="tel">Номер телефона</label
+        ><input
+          class="input"
+          type="tel"
+          name="tel"
+          id="tel"
+          placeholder="Телефон"
+          required
+        />
+
+        <label class="label" for="pass1">Пароль</label
+        ><input
+          class="input"
+          type="password"
+          name="password"
+          id="pass1"
+          placeholder="Пароль"
+          required
+        />
+
+        <label class="label" for="pass2">Подтвердить пароль</label
+        ><input
+          class="input"
+          type="password"
+          id="pass2"
+          placeholder="Повторите пароль"
+          required
+        />
+      </fieldset>
+      <fieldset class="form-group">
+        <label class="label" for="textarea">Сообщение</label>
+        <textarea
+          class="textarea input"
+          name="textarea"
+          id="textarea"
+          placeholder="Ваше сообщение"
+        ></textarea>
+        <input
+          class="checkbox"
+          type="checkbox"
+          name="checkbox"
+          id="checkbox"
+        /><label class="lable checkbox-label" for="checkbox">
+          Я принимаю правила</label
+        >
+      </fieldset>
+      <button class="button">Отправить</button>
+    </form>
+  </body>
+</html>
