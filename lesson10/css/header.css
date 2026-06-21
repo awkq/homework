@@ -1,0 +1,29 @@
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #d3cbd9;
+}
+
+.info {
+  text-align: right;
+}
+
+.info p {
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  color: #858e8a;
+  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  margin-bottom: 8px;
+}
+
+.info a {
+  font-weight: 500;
+  font-size: 18px;
+  color: #2c332f;
+}
