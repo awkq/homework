@@ -19,15 +19,17 @@
     />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
-        <div class="header-inner">
+        <div class="header__inner">
           <a href="/"
             ><img src="./img/logo.svg" width="84" height="45" alt="Логотип"
           /></a>
-          <div class="info">
-            <p class="info__text">Первое посещение бесплатно</p>
-            <a class="info__tel" href="tel:+79282822882">+7 (928) 282-28-82</a>
+          <div class="header__info">
+            <a class="header__info-tel" href="tel:+79282822882"
+              >+7 (928) 282-28-82</a
+            >
+            <p class="header__info-text">Первое посещение бесплатно</p>
           </div>
         </div>
       </div>
@@ -88,7 +90,7 @@
         </div>
         <div class="decor decor__wp decor__wp--2">
           <div class="container">
-            <button class="play-button">
+            <button class="article_play-button">
               <img
                 src="./img/play.svg"
                 width="24"
@@ -104,16 +106,15 @@
               controls
               poster="./img/foto.jpg"
             ></video>
+            <p class="article__text">
+              Приглашаем всех желающих посетить новый филиал фитнес клуба
+              "FitLife" и начать заботиться о своем здоровье и фитнесе прямо
+              сейчас!
+            </p>
           </div>
         </div>
 
-        <div class="container">
-          <p class="article__text">
-            Приглашаем всех желающих посетить новый филиал фитнес клуба
-            "FitLife" и начать заботиться о своем здоровье и фитнесе прямо
-            сейчас!
-          </p>
-        </div>
+        <div class="container"></div>
       </section>
     </article>
     <footer class="footer">
@@ -122,19 +123,27 @@
           <a class="footer__logo" href="/"
             ><img src="./img/logo.svg" width="84" height="45" alt="Логотип"
           /></a>
-          <nav class="menu">
-            <ul>
-              <li><a href="#">Клубы</a></li>
-              <li><a href="#">Тренировки</a></li>
-              <li><a href="#">Абонементы</a></li>
-              <li><a href="#">Программа лояльности</a></li>
+          <nav>
+            <ul class="footer__menu">
+              <li>
+                <a class="footer__menu-link" href="#">Клубы</a>
+              </li>
+              <li>
+                <a class="footer__menu-link" href="#">Тренировки</a>
+              </li>
+              <li>
+                <a class="footer__menu-link" href="#">Абонементы</a>
+              </li>
+              <li>
+                <a class="footer__menu-link" href="#">Программа лояльности</a>
+              </li>
               <li><a href="#">Контакты</a></li>
             </ul>
           </nav>
         </div>
       </div>
-      <div class="container">
-        <p class="copyright">&copy; Copyright. Все права защищены</p>
+      <div class="footer__container">
+        <p class="footer__copyright">&copy; Copyright. Все права защищены</p>
       </div>
     </footer>
   </body>

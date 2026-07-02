@@ -19,15 +19,17 @@
     />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
-        <div class="header-inner">
+        <div class="header__inner">
           <a href="/"
             ><img src="./img/logo.svg" width="84" height="45" alt="Логотип"
           /></a>
-          <div class="info">
-            <p class="info__text">Первое посещение бесплатно</p>
-            <a class="info__tel" href="tel:+79282822882">+7 (928) 282-28-82</a>
+          <div class="header__info">
+            <a class="header__info-tel" href="tel:+79282822882"
+              >+7 (928) 282-28-82</a
+            >
+            <p class="header__info-text">Первое посещение бесплатно</p>
           </div>
         </div>
       </div>
@@ -68,84 +70,92 @@
       <div class="container">
         <h2 class="title-large">Последние новости</h2>
         <div class="news__block">
-          <article class="card">
+          <article class="news__card">
             <header>
               <img
-                class="card__img"
+                class="news__card-img"
                 src="./img/news/Frame 1.jpg"
                 width="284"
                 height="203"
                 alt="Велотренажеры в ряд"
               />
-              <div class="card__info">
-                <time class="card__time" datetime="19-04-2024">19.04.2024</time>
-                <h3 class="card__title">
+              <div class="news__card-info">
+                <time class="news__card-time" datetime="19-04-2024"
+                  >19.04.2024</time
+                >
+                <h3 class="news__card-title">
                   Открытие нового филиала в центре города!
                 </h3>
               </div>
             </header>
             <footer class="news__footer">
-              <a class="card__link" href="./article.html">Подробнее</a>
+              <a class="news__card-link" href="./article.html">Подробнее</a>
             </footer>
           </article>
-          <article class="card">
+          <article class="news__card">
             <header>
               <img
-                class="card__img"
+                class="news__card-img"
                 src="./img/news/Frame 2.jpg"
                 width="284"
                 height="203"
                 alt="Групповое занятие"
               />
-              <div class="card__info">
-                <time class="card__time" datetime="17-04-2024">17.04.2024</time>
-                <h3 class="card__title">
+              <div class="news__card-info">
+                <time class="news__card-time" datetime="17-04-2024"
+                  >17.04.2024</time
+                >
+                <h3 class="news__card-title">
                   Запуск новой программы тренировок для начинающих
                 </h3>
               </div>
             </header>
             <footer class="news__footer">
-              <a class="card__link" href="./article.html">Подробнее</a>
+              <a class="news__card-link" href="./article.html">Подробнее</a>
             </footer>
           </article>
-          <article class="card">
+          <article class="news__card">
             <header>
               <img
-                class="card__img"
+                class="news__card-img"
                 src="./img/news/Frame 3.jpg"
                 width="284"
                 height="203"
                 alt="Девушки на велотренажерах"
               />
-              <div class="card__info">
-                <time class="card__time" datetime="13-04-2024">13.04.2024</time>
-                <h3 class="card__title">
+              <div class="news__card-info">
+                <time class="news__card-time" datetime="13-04-2024"
+                  >13.04.2024</time
+                >
+                <h3 class="news__card-title">
                   Специальное предложение для студентов и школьников
                 </h3>
               </div>
             </header>
             <footer class="news__footer">
-              <a class="card__link" href="./article.html">Подробнее</a>
+              <a class="news__card-link" href="./article.html">Подробнее</a>
             </footer>
           </article>
-          <article class="card">
+          <article class="news__card">
             <header>
               <img
-                class="card__img"
+                class="news__card-img"
                 src="./img/news/Frame 4.jpg"
                 width="284"
                 height="203"
                 alt="Девушка на беговой дорожке делает бегит"
               />
-              <div class="card__info">
-                <time class="card__time" datetime="08-04-2024">08.04.2024</time>
-                <h3 class="card__title">
+              <div class="news__card-info">
+                <time class="news__card-time" datetime="08-04-2024"
+                  >08.04.2024</time
+                >
+                <h3 class="news__card-title">
                   Открыт конкурс на лучший фитнес-челлендж
                 </h3>
               </div>
             </header>
             <footer class="news__footer">
-              <a class="card__link" href="./article.html">Подробнее</a>
+              <a class="news__card-link" href="./article.html">Подробнее</a>
             </footer>
           </article>
         </div>
@@ -227,19 +237,27 @@
           <a class="footer__logo" href="/"
             ><img src="./img/logo.svg" width="84" height="45" alt="Логотип"
           /></a>
-          <nav class="menu">
-            <ul>
-              <li><a href="#">Клубы</a></li>
-              <li><a href="#">Тренировки</a></li>
-              <li><a href="#">Абонементы</a></li>
-              <li><a href="#">Программа лояльности</a></li>
+          <nav>
+            <ul class="footer__menu">
+              <li>
+                <a class="footer__menu-link" href="#">Клубы</a>
+              </li>
+              <li>
+                <a class="footer__menu-link" href="#">Тренировки</a>
+              </li>
+              <li>
+                <a class="footer__menu-link" href="#">Абонементы</a>
+              </li>
+              <li>
+                <a class="footer__menu-link" href="#">Программа лояльности</a>
+              </li>
               <li><a href="#">Контакты</a></li>
             </ul>
           </nav>
         </div>
       </div>
-      <div class="container">
-        <p class="copyright">&copy; Copyright. Все права защищены</p>
+      <div class="footer__container">
+        <p class="footer__copyright">&copy; Copyright. Все права защищены</p>
       </div>
     </footer>
   </body>

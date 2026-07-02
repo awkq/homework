@@ -1,4 +1,4 @@
-.header-inner {
+.header__inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,11 +8,11 @@
   border-bottom: 1px solid #d3cbd9;
 }
 
-.info {
+.header__info {
   text-align: right;
 }
 
-.info__text {
+.header__info-text {
   font-weight: 300;
   font-size: 14px;
   letter-spacing: 0.04em;
@@ -23,7 +23,7 @@
   margin-bottom: 8px;
 }
 
-.info__tel {
+.header__info-tel {
   font-weight: 500;
   font-size: 18px;
   color: #2c332f;

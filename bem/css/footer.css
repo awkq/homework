@@ -20,7 +20,7 @@
   margin-bottom: 40px;
 }
 
-.menu ul {
+.footer__menu {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,7 +30,7 @@
   padding: 0;
 }
 
-.menu a {
+.footer__menu-link {
   font-weight: 400;
   font-size: 16px;
   line-height: 130%;
@@ -38,7 +38,7 @@
   transition: color 0.2s;
 }
 
-.copyright {
+.footer__copyright {
   font-weight: 400;
   font-size: 14px;
   letter-spacing: 0.04em;
