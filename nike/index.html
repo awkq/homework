@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="shortcut icon" href="./icon/favicon.ico" type="image/x-icon" />
-    <script defer type="module" src="./js/index.js"></script>
+    <script type="module" src="./js/index.js"></script>
     <title>Nike</title>
   </head>
   <body class="page__body">
@@ -86,5 +86,38 @@
         </div>
       </div>
     </header>
+    <main class="main">
+      <section class="hero">
+        <div class="container hero__container">
+          <header class="hero__header">
+            <ul class="hero__benefits-list">
+              <li class="hero__benefits-items">стиль</li>
+              <li class="hero__benefits-items">скорость</li>
+            </ul>
+            <h1 class="hero__title">
+              Nike <span class="hero__title-accent">air</span> mag
+            </h1>
+          </header>
+          <img
+            src="./images/Nike__hero-1.png"
+            width="846"
+            height="713"
+            alt="Кроссовок Nike с кольцом света под подошвой"
+            class="hero__img"
+          />
+          <footer class="hero__footer">
+            <a href="#" class="hero__details"
+              >Подробнее
+              <svg width="24px" height="24px">
+                <use
+                  class="hero__details-icon"
+                  href="./icon/main-sprite.svg#arrow-right"
+                ></use>
+              </svg>
+            </a>
+          </footer>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
