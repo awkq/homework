@@ -4,6 +4,7 @@
   color: var(--main-color);
   scroll-behavior: smooth;
   scroll-padding: 98px;
+  scrollbar-gutter: stable;
 }
 
 .page__body {
@@ -17,11 +18,13 @@
 }
 
 img {
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
 a:focus-visible,
-button:focus-visible {
+button:focus-visible,
+input:focus-visible {
   outline: 1px solid var(--accent-color);
   outline-offset: 2px;
 }
