@@ -23,6 +23,7 @@
   .hero__help {
     top: 70%;
     right: 15%;
+    z-index: var(--layer-2);
   }
 }
 
@@ -221,7 +222,6 @@
 .hero__neuron-img {
   box-shadow: inset 58px 4px 191px 47px #000;
   mix-blend-mode: lighten;
-  pointer-events: none;
 }
 
 @media (width >=768px) {
@@ -331,6 +331,7 @@
     position: absolute;
     top: 5px;
     right: -335px;
+    pointer-events: none;
   }
 
   .hero__sing-up::after {
@@ -373,4 +374,8 @@
   .hero__link-text {
     display: none;
   }
+}
+
+.hero__img-container {
+  pointer-events: none;
 }
