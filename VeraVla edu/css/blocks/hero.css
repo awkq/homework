@@ -221,6 +221,7 @@
 .hero__neuron-img {
   box-shadow: inset 58px 4px 191px 47px #000;
   mix-blend-mode: lighten;
+  pointer-events: none;
 }
 
 @media (width >=768px) {
