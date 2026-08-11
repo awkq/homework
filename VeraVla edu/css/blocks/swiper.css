@@ -3,13 +3,6 @@
   padding-bottom: 85px;
 }
 
-/* @media (width<=768px) {
-  .swiper__container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-} */
 .swiper__title {
   display: flex;
   justify-content: space-between;
@@ -51,7 +44,6 @@
     display: none;
   }
   .swiper__btn-down {
-    /* margin-left: auto; */
     margin: 20px auto 0;
   }
 }

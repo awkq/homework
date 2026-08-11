@@ -6,15 +6,6 @@
   padding-top: 103px;
 }
 
-/* .curriculum__background {
-  background: linear-gradient(
-    286.41deg,
-    rgba(2, 35, 53, 0.8) 3.39%,
-    rgba(12, 55, 61, 0.8) 88.78%
-  );
-  transform: rotate(-180deg);
-} */
-
 .curriculum__summary {
   position: relative;
   border-radius: 6px;

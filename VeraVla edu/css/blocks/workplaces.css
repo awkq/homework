@@ -18,14 +18,10 @@
     rgba(31, 63, 77, 0.54) 0%,
     rgba(31, 75, 94, 0) 100%
   );
-
-  font-family: var(--font-family);
   font-weight: 500;
   font-size: 15px;
   line-height: 140%;
   color: var(--main-color);
-
-  /* max-width: 692px; */
   padding-block: 20px;
   margin-bottom: 20px;
 }
@@ -45,8 +41,6 @@
 .workplaces__list {
   position: relative;
   list-style: none;
-
-  /* min-width: clamp(19rem, 10rem + 45vw, 43.75rem); */
 }
 
 @media (width>=768px) {
@@ -72,7 +66,6 @@
   flex-shrink: 0;
   width: 33px;
   height: 33px;
-  /* margin-top: 11px; */
   margin-right: 20px;
   margin-left: 24px;
   background-image: url("../../icon/marker.svg");
@@ -91,8 +84,6 @@
     box-shadow: inset 0 0 110px 14px #000;
     mix-blend-mode: lighten;
     transform: translateY(-100%) translateX(-15%);
-    /* top: 200px;
-  right: 100px; */
   }
   .workplaces__ai-mobile {
     display: none;
@@ -108,28 +99,3 @@
     mix-blend-mode: lighten;
   }
 }
-/* .workplaces__list::after {
-  content: "";
-  position: absolute;
-  width: 305px;
-  height: 305px;
-  z-index: var(--layer-3);
-  bottom: 200px;
-  right: -200px;
-  border-radius: 100%;
-  background-color: #ffaa0057;
-  filter: blur(140px);
-}
-
-.workplaces__list::before {
-  content: "";
-  position: absolute;
-  width: 305px;
-  height: 305px;
-  z-index: var(--layer-3);
-  bottom: 0px;
-  right: -500px;
-  border-radius: 100%;
-  background-color: #00e1ff62;
-  filter: blur(140px);
-} */
