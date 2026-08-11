@@ -1,0 +1,137 @@
+.modal {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  inset: 0;
+  z-index: var(--layer-3);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  visibility: hidden;
+  background: var(--overlay);
+  text-align: center;
+  transition:
+    opacity var(--transition-time),
+    visibility var(--transition-time);
+}
+
+.modal--open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal__close {
+  position: absolute;
+  top: -25px;
+  right: -25px;
+}
+
+.modal__window {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  margin-block: 50px;
+  vertical-align: middle;
+  border-radius: 12px;
+  background-color: var(--bg-color);
+  box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.53);
+
+  background: linear-gradient(286.41deg, #033958 3.34%, #0f6b78 88.3%);
+}
+
+@media (width>768px) {
+  .modal__window {
+    padding: 54px 83px 65px 80px;
+    max-width: 590px;
+  }
+}
+
+@media (width<=768px) {
+  .modal__window {
+    padding: 33px 26px 44px 29px;
+    max-width: 302px;
+  }
+}
+
+.modal__title {
+  font-weight: 500;
+  font-size: clamp(1.25rem, 0.955rem + 1.48vw, 2.063rem);
+  text-transform: uppercase;
+  color: var(--main-color);
+
+  text-align: left;
+}
+@media (width>768px) {
+  .modal__title {
+    padding-block: 54px 25px;
+  }
+}
+
+@media (width<=768px) {
+  .modal__title {
+    padding-bottom: 15px;
+  }
+}
+
+.modal__sign-up-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal__sign-up-label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  color: #00e0ff;
+  width: 100%;
+}
+
+.modal__sign-up-input {
+  height: 60px;
+  border-radius: 9px;
+  width: 100%;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 0.1em;
+  color: var(--main-color);
+  background: linear-gradient(
+    180deg in oklch,
+    rgba(0, 224, 255, 0.11) 0%,
+    rgba(0, 224, 255, 0.05) 100%
+  );
+
+  padding: 21px 0 16px 21px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border: 2 px solid
+    linear-gradient(
+      180deg in oklch,
+      rgba(0, 224, 255, 0.11) 4%,
+      rgba(0, 224, 255, 0.05) 88%
+    );
+}
+
+.modal__sign-up-input::placeholder {
+  opacity: 1;
+  color: var(--main-color);
+}
+
+.modal__btn {
+  width: 100%;
+}
+@media (width>768px) {
+  .modal__btn {
+    margin-top: 45px;
+  }
+}

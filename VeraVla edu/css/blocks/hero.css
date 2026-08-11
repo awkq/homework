@@ -1,0 +1,375 @@
+.hero {
+  overflow-x: clip;
+}
+
+.hero__help {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (width>=1540px) {
+  .hero__help {
+    top: 25%;
+    left: 5%;
+  }
+}
+
+@media (width<1540px) {
+  .hero__help-text {
+    display: none;
+  }
+  .hero__help {
+    top: 70%;
+    right: 15%;
+  }
+}
+
+@media (width <=768px) {
+  .hero__help {
+    top: 100%;
+    right: 22%;
+  }
+}
+
+.hero__help:hover {
+  transform: translateY(3px);
+}
+
+.hero__help:active {
+  transform: translateY(0);
+}
+
+.hero__help-container {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+}
+
+.hero__help-pulse {
+  position: absolute;
+  height: 139px;
+  width: 139px;
+  border-radius: 100%;
+  background: linear-gradient(180deg, #03e1ffa8 5%, #13cdc2 90%);
+  z-index: var(--layer-negative);
+
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1.1.2);
+    opacity: 0;
+  }
+}
+
+@media (width >=768px) {
+  .hero__help-pulse {
+    top: -20%;
+    left: -20%;
+  }
+}
+@media (width <768px) {
+  .hero__help-pulse {
+    top: -51%;
+    left: -52%;
+  }
+}
+
+.hero__help-border {
+  position: relative;
+  content: "";
+  display: inline-block;
+
+  border-radius: 100%;
+  background: linear-gradient(180deg, #03e1ffa8 5%, #13cdc2 90%);
+  box-shadow: 0 7px 20px -7px #00e0ff;
+  z-index: 1;
+}
+
+@media (width >=768px) {
+  .hero__help-border {
+    min-width: 100px;
+    min-height: 100px;
+  }
+}
+@media (width <768px) {
+  .hero__help-border {
+    min-width: 68px;
+    min-height: 68px;
+  }
+}
+
+.hero__help-text {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 10px;
+  letter-spacing: 0.36em;
+  text-transform: uppercase;
+  color: #00e0ff;
+  transform: translate(-55px, 250px) rotate(-90deg);
+}
+
+.hero__help-phone {
+  position: absolute;
+
+  z-index: 2;
+}
+
+@media (width >=768px) {
+  .hero__help-phone {
+    top: 31%;
+    left: 31%;
+  }
+}
+@media (width <768px) {
+  .hero__help-phone {
+    top: 22%;
+    left: 23%;
+  }
+}
+
+.hero__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: flex-start;
+}
+
+.hero__pre-title {
+  padding-top: 155px;
+
+  font-weight: 600;
+  font-size: 18px;
+  color: #747d81;
+}
+
+.hero__title {
+  font-weight: 600;
+  font-size: clamp(3.188rem, 1.892rem + 6.48vw, 6.75rem);
+  background: linear-gradient(180deg, #fff 31.75%, #1a3031 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-bottom: 18px;
+}
+
+.hero__description {
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--main-color);
+  max-width: 580px;
+  padding-bottom: 77px;
+}
+
+.hero__guarantee {
+  display: flex;
+
+  gap: 33px;
+  max-width: 580px;
+}
+
+@media (width>=768px) {
+  .hero__guarantee {
+    padding-bottom: 101px;
+  }
+}
+
+.hero__guarantee-item {
+  max-height: 71px;
+  border: 2px solid #00e0ff0d 100%;
+  padding: 18px 16px 14px;
+  border-radius: 12px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 224, 255, 0.11) 0%,
+    rgba(0, 224, 255, 0.05) 100%
+  );
+}
+
+.hero__gurantee-title {
+  font-weight: 750;
+  font-size: 18px;
+  color: var(--main-color);
+  padding-bottom: 10px;
+}
+
+.hero__gurantee-text {
+  font-weight: 500;
+  line-height: 172%;
+  color: #00e0ff;
+}
+
+.hero__gurantee-accent {
+  line-height: 128%;
+}
+
+.hero__sing-up {
+  margin-bottom: 178px;
+}
+
+.hero__neuron-img {
+  box-shadow: inset 58px 4px 191px 47px #000;
+  mix-blend-mode: lighten;
+}
+
+@media (width >=768px) {
+  .hero__link {
+    position: absolute;
+    left: 515px;
+    top: 675px;
+    display: flex;
+    align-items: center;
+    transform: rotate(-90deg);
+  }
+
+  .hero__link-container {
+    display: flex;
+  }
+
+  .hero__link-text {
+    padding-left: 32px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 10px;
+    letter-spacing: 0.36em;
+    text-transform: uppercase;
+    color: #747d81;
+  }
+
+  .hero__switch input {
+    display: none;
+  }
+
+  /* Контейнер-свитчер */
+  .hero__switch {
+    position: relative;
+    width: 37px;
+    height: 20px;
+  }
+
+  /* Бегунок (до переключения) */
+  .hero__slider {
+    border: 1px solid #4a8bec;
+
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    transition: 0.4s;
+    border-radius: 34px;
+  }
+
+  /* Кружок внутри бегунка */
+  .hero__slider:before {
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 10px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #4abcec;
+    transition: 0.4s;
+    border-radius: 50%;
+    animation: moving-circle 3s infinite;
+  }
+
+  @keyframes moving-circle {
+    0% {
+      transform: translateX(0%);
+    }
+    50% {
+      transform: translateX(16px);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  .hero__description::after {
+    content: "";
+    position: absolute;
+    width: 438px;
+    height: 438px;
+    z-index: var(--layer-negative);
+    bottom: -300px;
+    left: 400px;
+    border-radius: 100%;
+    background-color: #00e1ff62;
+    filter: blur(140px);
+  }
+
+  .hero__container::before {
+    content: "";
+    position: absolute;
+    width: 305px;
+    height: 305px;
+    z-index: var(--layer-negative);
+
+    top: 425px;
+    right: -225px;
+    border-radius: 100%;
+    background-color: #00e1ff62;
+    filter: blur(140px);
+  }
+
+  .hero__neuron-img {
+    position: absolute;
+    top: 5px;
+    right: -335px;
+  }
+
+  .hero__sing-up::after {
+    position: absolute;
+    content: "";
+    height: 729px;
+    width: 745px;
+    background-image: url("../../icon/hero-blick.svg");
+    left: 769px;
+    top: 60px;
+    pointer-events: none;
+  }
+
+  .hero__img-container::before {
+    content: "";
+    position: absolute;
+    width: 438px;
+    height: 438px;
+    z-index: var(--layer-negative);
+    border-radius: 100%;
+    background-color: #00e1ff63;
+    filter: blur(147px);
+    bottom: 280px;
+    right: -20px;
+    mix-blend-mode: lighten;
+  }
+  .hero__neuron-background {
+    position: absolute;
+    bottom: -40px;
+    left: -300px;
+    box-shadow: inset 58px 4px 191px 47px #000;
+    mix-blend-mode: lighten;
+  }
+}
+
+@media (width <768px) {
+  .hero__neuron-background {
+    display: none;
+  }
+  .hero__link-text {
+    display: none;
+  }
+}

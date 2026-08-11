@@ -1,0 +1,246 @@
+.page {
+  font-family: var(--font-family);
+  font-weight: 400;
+  background: var(--background-color-light);
+  scroll-behavior: smooth;
+  overflow-x: hidden !important;
+}
+
+.page__body {
+  min-width: 375px;
+}
+
+.bg-light {
+  background: var(--background-color-light);
+  z-index: var(--layer-bg);
+}
+
+.bg-dark {
+  background: var(--background-color-dark);
+}
+
+.section-border {
+  position: relative;
+}
+
+.section-border::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 1px;
+  background: var(--shadow-color);
+  -webkit-box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow);
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+  pointer-events: none;
+}
+
+.section-border::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 1px;
+  background: var(--section-border);
+  -webkit-box-shadow: var(--section-border);
+  box-shadow: var(--section-border);
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+  pointer-events: none;
+}
+
+.container {
+  width: min(var(--container-width), 100% - var(--container-padding) * 2);
+  margin-inline: auto;
+}
+
+.sing-up-btn {
+  font-weight: 750;
+  font-size: 12px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--main-color);
+  padding: 22px 20px 25px;
+  border-radius: 9px;
+  background: linear-gradient(180deg, rgba(3, 225, 255, 0.66) 0%, #13cdc2 100%);
+  transform: var(--transition-time);
+}
+
+@media (any-hover: hover) {
+  .sing-up-btn:hover {
+    box-shadow: 0 7px 20px -7px #00e0ff;
+  }
+}
+
+.section-title {
+  font-weight: 500;
+  font-size: clamp(1.875rem, 1.33rem + 2.73vw, 3.375rem);
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+
+.title-accent {
+  color: #4abcec;
+}
+
+.common-text {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: clamp(0.875rem, 0.83rem + 0.23vw, 1rem);
+  color: var(--main-color);
+}
+
+/* Кнопка прокрутки наверх */
+.scroll-to-top {
+  position: fixed;
+
+  color: var(--main-color);
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Начальное состояние - скрыта */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+}
+
+@media (width>=1640px) {
+  .scroll-to-top {
+    top: 70%;
+    left: 5%;
+  }
+}
+@media (width<1640px) {
+  .scroll-to-top {
+    top: 70%;
+    right: 17%;
+  }
+}
+
+@media (width<768px) {
+  .scroll-to-top {
+    top: 70%;
+    right: 20%;
+  }
+}
+
+.scroll-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.scroll-to-top:hover {
+  transform: translateY(-3px);
+}
+
+.scroll-to-top:active {
+  transform: translateY(0);
+}
+
+@media (any-hover: hover) {
+  .scroll-top__pulse:hover {
+    box-shadow: 0 7px 20px -7px #00e0ff;
+  }
+}
+.scroll-top__container {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+}
+
+.scroll-top__pulse {
+  position: absolute;
+  border-radius: 100%;
+  background: linear-gradient(180deg, #03e1ffa8 5%, #13cdc2 90%);
+  opacity: 0.05;
+  z-index: var(--layer-negative);
+}
+
+@media (width>=768px) {
+  .scroll-top__pulse {
+    height: 139px;
+    width: 139px;
+    top: -20%;
+    left: -20%;
+  }
+}
+@media (width<768px) {
+  .scroll-top__pulse {
+    height: 91px;
+    width: 91px;
+    top: -31%;
+    left: -39%;
+  }
+}
+
+.scroll-top__border {
+  position: relative;
+  content: "";
+  display: inline-block;
+
+  border-radius: 100%;
+  background: linear-gradient(180deg, #03e1ffa8 5%, #13cdc2 90%);
+  box-shadow: 0 7px 20px -7px #00e0ff;
+  z-index: 1;
+}
+
+@media (width>=768px) {
+  .scroll-top__border {
+    min-width: 100px;
+    min-height: 100px;
+  }
+}
+@media (width<768px) {
+  .scroll-top__border {
+    min-width: 52px;
+    min-height: 52px;
+  }
+}
+
+.scroll-top__text {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 10px;
+  letter-spacing: 0.36em;
+  text-transform: uppercase;
+  color: #00e0ff;
+  transform: translate(-18px, -123px) rotate(-90deg);
+}
+
+@media (width<1640px) {
+  .scroll-top__text {
+    display: none;
+  }
+}
+
+.scroll-top__img {
+  position: absolute;
+
+  z-index: 2;
+}
+
+@media (width>=768px) {
+  .scroll-top__img {
+    top: 36%;
+    left: 42%;
+  }
+}
+@media (width<768px) {
+  .scroll-top__img {
+    top: 25%;
+    left: 37%;
+  }
+}

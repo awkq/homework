@@ -1,0 +1,80 @@
+.reason {
+  width: 100%;
+  height: 100%;
+  overflow-x: clip;
+}
+
+.reason__title {
+  padding-top: 124px;
+  padding-bottom: 58px;
+}
+
+.reason__container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 20px;
+  padding-bottom: 120px;
+}
+
+.reason__item {
+  position: relative;
+
+  display: flex;
+
+  flex-direction: column;
+  gap: 19px;
+  min-height: 212px;
+  padding: 32px 24px;
+  border-radius: 20px;
+  background: var(--item-background-color);
+  grid-column: span 3;
+}
+
+.reason__item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 2.5px;
+  border-radius: inherit;
+  background: var(--border-color);
+  -webkit-mask:
+    -webkit-gradient(linear, left top, left bottom, color-stop(0, #000))
+      content-box,
+    -webkit-gradient(linear, left top, left bottom, color-stop(0, #000));
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.reason__item::after {
+  position: absolute;
+  content: "";
+  height: 32px;
+  width: 63px;
+
+  background-image: url("../../icon/sm-glare.svg");
+  left: 25px;
+  bottom: -12px;
+}
+
+.reason__item-text {
+  padding-top: 15px;
+}
+
+.reason__item--second-row {
+  grid-column: span 4;
+}
+
+@media (width <= 1200px) {
+  .reason__container {
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  }
+
+  .reason__item {
+    grid-column: auto;
+  }
+}

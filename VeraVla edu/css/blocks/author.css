@@ -1,0 +1,131 @@
+.author {
+  overflow-x: clip;
+}
+.author__container {
+  position: relative;
+
+  display: flex;
+  flex-shrink: 0;
+}
+
+@media (width<=768px) {
+  .author__container {
+    flex-direction: column;
+  }
+}
+
+@media (width >=768px) {
+  .author__text-block {
+    padding-block: 100px;
+  }
+}
+@media (width <768px) {
+  .author__text-block {
+    padding-top: 65px;
+  }
+}
+
+.author__title {
+  position: relative;
+  padding-top: 35px;
+  padding-bottom: 50px;
+}
+
+.author__title::after {
+  position: absolute;
+  content: "";
+  height: 32px;
+  width: 63px;
+  background-image: url("../../icon/text-glare.svg");
+  left: -20px;
+  top: 144px;
+}
+
+.author__about {
+  position: relative;
+  line-height: 160%;
+  max-width: 500px;
+  padding-bottom: 15px;
+}
+
+.author__photo-descript {
+  position: absolute;
+  z-index: var(--layer-3);
+}
+
+@media (width >768px) {
+  .author__photo-descript {
+    top: 591px;
+    left: 753px;
+  }
+  .author__about {
+    padding-right: 93px;
+  }
+}
+
+@media (width <=768px) {
+  .author__photo-descript {
+    bottom: 30px;
+    right: 30px;
+  }
+}
+
+.author__photo-title {
+  font-family: var(--font-family);
+  font-weight: 750;
+  font-size: 24px;
+  line-height: 83%;
+  color: #00e0ff;
+  padding-bottom: 7px;
+}
+
+.author__photo-text {
+  line-height: 143%;
+}
+
+.author__photo-polygon {
+  position: absolute;
+  box-shadow: inset 1px 0 16px 41px #08262b;
+  mix-blend-mode: lighten;
+  opacity: 0.5;
+}
+.author__photo-img {
+  z-index: 2;
+}
+
+@media (width >= 768px) {
+  .author__photo-polygon {
+    top: 108px;
+    left: 411px;
+    z-index: var(--layer-1);
+  }
+  .author__photo-img {
+    position: absolute;
+    top: 132px;
+    left: 495;
+  }
+  .author__photo-blick {
+    position: absolute;
+    top: 150px;
+    left: 463px;
+    z-index: var(--layer-1);
+  }
+}
+
+@media (width < 768px) {
+  .author__photo-container {
+    position: relative;
+  }
+
+  .author__photo-blick {
+    display: none;
+  }
+
+  .author__photo-polygon {
+    position: absolute;
+    z-index: var(--layer-negative);
+    min-width: 691px;
+    top: 0px;
+    left: 0px;
+  }
+}

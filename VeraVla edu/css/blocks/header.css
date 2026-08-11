@@ -1,0 +1,63 @@
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (width > 768px) {
+  .header::before {
+    content: "";
+    position: absolute;
+    width: 438px;
+    height: 438px;
+    z-index: var(--layer-negative);
+    border-radius: 100%;
+    background-color: #00e0ff;
+    filter: blur(247px);
+    top: -400px;
+    left: 15%;
+  }
+
+  .header__neuron-img {
+    position: absolute;
+    box-shadow: inset 58px 4px 191px 47px #000;
+    transform: rotate(-180deg) scaleX(-1);
+    mix-blend-mode: lighten;
+    top: -605px;
+    right: 500px;
+  }
+
+  .header__phone {
+    display: flex;
+    gap: 5px;
+    padding-top: 26px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: right;
+    color: var(--main-color);
+  }
+
+  .header__logo {
+    padding-top: 46px;
+  }
+}
+
+@media (width <= 768px) {
+  .header__neuron-img {
+    display: none;
+  }
+
+  .header__phone {
+    display: none;
+  }
+
+  .header__logo {
+    width: 195px;
+    height: 58px;
+    margin: 24px 70px 0 30px;
+  }
+}
+
+.header__phone-img {
+  align-items: center;
+}

@@ -1,0 +1,50 @@
+:root {
+  --font-family: "Avenir Next Cyr", sans-serif;
+
+  --accent-color: #4abcec;
+  --overlay: #08262b80;
+
+  --main-color: #fff;
+  --bg-color: linear-gradient(286.41deg, #022335 3.63%, #043a41 90.98%);
+  --background-color-light: linear-gradient(313deg, #022335 0%, #043a41 100%);
+  --background-color-dark: linear-gradient(90deg, #011c2b 0%, #092a2e 100%);
+  --item-background-color: linear-gradient(
+    180deg,
+    rgba(0, 224, 255, 0.11) 0%,
+    rgba(0, 224, 255, 0.05) 100%
+  );
+  --border-color: conic-gradient(
+    from 35deg,
+    #2a66802e 0deg,
+    #2a66802e 80deg,
+
+    #49b9e861 115deg,
+    #49b9e873 125deg,
+    #49b9e861 130deg,
+
+    #28627a33 200deg,
+    #28627a33 260deg,
+
+    #49b9e861 295deg,
+    #49b9e873 305deg,
+    #49b9e861 310deg,
+
+    #1f4d602e 360deg
+  );
+  --shadow-color: #00e0ff;
+  --section-border:
+    0 0 24px 0 rgba(0, 224, 255, 0.8), 0 4px 15px 0 rgba(0, 224, 255, 0.4);
+
+  /*  */
+  --container-width: 1240px;
+  --container-padding: 15px;
+
+  --transition-time: 0.2s;
+
+  --layer-bg: -2;
+  --layer-negative: -1;
+  --layer-0: 0;
+  --layer-1: 1;
+  --layer-2: 2;
+  --layer-3: 3;
+}

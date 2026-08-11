@@ -1,0 +1,1412 @@
+<!doctype html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <link rel="shortcut icon" href="./icon/favicon.svg" type="image/x-icon" />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script type="module" src="./js/index.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+
+    <title>
+      VeraVla edu академия обучения разработке искусственного интеллекта
+    </title>
+  </head>
+  <body class="page__body">
+    <header id="header" class="header">
+      <div class="container header__container">
+        <a href="#" class="header__logo"
+          ><img
+            src="./icon/logo.svg"
+            width="287"
+            height="86"
+            alt="Логотип онлайн академии VeraVla edu"
+        /></a>
+        <picture>
+          <source srcset="./images/Neuron.webp" />
+          <img
+            class="header__neuron-img"
+            src="./images/Neuron.png"
+            alt="Нейроны крупным планом"
+        /></picture>
+        <div class="header__burger burger">
+          <svg class="header__burger-btn" width="37" height="35">
+            <use href="./icon/burger.svg"></use>
+          </svg>
+        </div>
+        <a href="tel:+821075269192" class="header__phone"
+          ><svg class="header__phone-img" width="25" height="25">
+            <use href="./icon/phone-icon.svg"></use>
+          </svg>
+          + 82 (10) 7526-9192
+        </a>
+        <div
+          class="menu header__menu"
+          id="header__menu"
+          aria-label="Главное меню"
+        >
+          <div class="menu__list">
+            <a class="menu__item menu__link">
+              <svg class="header__phone-img" width="37" height="35">
+                <use href="./icon/burger.svg"></use>
+              </svg>
+            </a>
+
+            <a class="menu__tel menu__link">+ 82 (10) 7526-9192</a>
+
+            <svg class="menu__cross" width="18" height="18">
+              <use class="menu__link" href="./icon/main-sprite.svg#cross"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div
+          class="hero__help"
+          role="button"
+          tabindex="0"
+          aria-label="Кнопка записи на консультацию"
+          data-modal-button="buy"
+          data-modal-speed="300"
+          title="Бесплатная консультация"
+        >
+          <div class="hero__help-container">
+            <div class="hero__help-pulse"></div>
+            <div class="hero__help-border">
+              <div class="hero__help-phone">
+                <svg class="" width="40" height="40">
+                  <use href="./icon/main-sprite.svg#headphones"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <a href="#reason" class="hero__help-text">Бесплатная консультация</a>
+        </div>
+        <div class="hero__container container">
+          <div class="hero__pre-title">Добро пожаловать в онлайн школу</div>
+          <h1
+            class="hero__title"
+            aria-label="Школа разработчиков искуственного интелекта VeraVla edu"
+            title="Школа разработчиков искусственного интеллекта VeraVla edu"
+          >
+            VeraVla edu!
+          </h1>
+          <p class="hero__description">
+            Переквалифицируйся в разработчика искусственного интеллекта и получи
+            высокооплачиваемую работу
+          </p>
+          <div class="hero__guarantee">
+            <div class="hero__guarantee-item">
+              <svg width="39" height="39">
+                <use
+                  class="hero__guarantee-img"
+                  href="./icon/hero-sprite.svg#guarantee"
+                ></use>
+              </svg>
+            </div>
+            <div class="hero__gurantee-descript">
+              <div class="hero__gurantee-title">Мы обучаем с гарантией!</div>
+              <div class="hero__gurantee-text">
+                Первый месяц действует гарантия 100% возврата
+                <br /><span class="hero__gurantee-accent">
+                  денег, если тебя не устроят наши курсы</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="hero__img-container">
+            <picture>
+              <source srcset="./images/Neuron.webp" />
+              <img
+                class="hero__neuron-img"
+                src="./images/Neuron.png"
+                alt="Нейроны крупным планом"
+                fetchpriority="high"
+            /></picture>
+            <picture>
+              <source srcset="./images/Neuron-background.webp" />
+              <img
+                class="hero__neuron-background"
+                src="./images/Neuron-background.png"
+                alt="Нейроны крупным планом"
+            /></picture>
+          </div>
+          <button
+            class="hero__sing-up sing-up-btn"
+            data-modal-button="buy"
+            data-modal-speed="300"
+          >
+            Записаться на ознакомительный вебинар
+          </button>
+          <div class="hero__link">
+            <label id="Checkbox" class="hero__switch">
+              <a onclick="window.location.href = '#reason'" ;>
+                <span class="hero__slider"></span>
+              </a>
+            </label>
+            <a href="#reason" for="Checkbox" class="hero__link-text"
+              >Листайте вниз</a
+            >
+          </div>
+        </div>
+      </section>
+      <section id="reason" class="reason bg-dark section-border">
+        <div class="container">
+          <h2 class="reason__title section-title">
+            <span class="title-accent">7 причин</span>
+            почему именно мы?
+          </h2>
+          <div class="reason__container container">
+            <article class="reason__item reason__item--first-row common-text">
+              <svg width="50" height="50">
+                <use
+                  class="reason__item-icon"
+                  href="./icon/reason-sprite.svg#manager"
+                ></use>
+              </svg>
+              <p class="reason__item-text">
+                Ты станешь востребованным специалистом в области искусственного
+                интеллекта
+              </p>
+            </article>
+            <article class="reason__item reason__item--first-row common-text">
+              <svg width="50" height="50">
+                <use
+                  class="reason__item-icon"
+                  href="./icon/reason-sprite.svg#blockchain"
+                ></use>
+              </svg>
+              <p class="reason__item-text">
+                Будешь создавать свои модели искусственного интеллекта на языке
+                программирования Python
+              </p>
+            </article>
+            <article class="reason__item reason__item--first-row common-text">
+              <svg width="50" height="50">
+                <use
+                  class="reason__item-icon"
+                  href="./icon/reason-sprite.svg#design"
+                ></use>
+              </svg>
+              <p class="reason__item-text">
+                Сумеешь создавать программы, связанные с компьютерным зрением и
+                нейронными сетями.
+              </p>
+            </article>
+            <article class="reason__item reason__item--first-row common-text">
+              <svg width="50" height="50">
+                <use
+                  class="reason__item-icon"
+                  href="./icon/reason-sprite.svg#survey"
+                ></use>
+              </svg>
+              <p class="reason__item-text">
+                Мы обучаем только тому, что тебе пригодится во время работы!
+              </p>
+            </article>
+            <article class="reason__item reason__item--second-row common-text">
+              <svg width="50" height="50">
+                <use
+                  class="reason__item-icon"
+                  href="./icon/reason-sprite.svg#people"
+                ></use>
+              </svg>
+              <p class="reason__item-text">
+                Ты найдешь единомышленников, с которыми сможешь создавать свои
+                проекты
+              </p>
+            </article>
+            <article class="reason__item reason__item--second-row common-text">
+              <svg width="50" height="50">
+                <use
+                  class="reason__item-icon"
+                  href="./icon/reason-sprite.svg#conference"
+                ></use>
+              </svg>
+              <p class="reason__item-text">
+                Мы создаём сообщество профессионалов, таких же как и мы,
+                жаждущих развивать и изменять этот мир к лучшему с помощью IT
+                технологий
+              </p>
+            </article>
+            <article class="reason__item reason__item--second-row common-text">
+              <svg width="50" height="50">
+                <use
+                  class="reason__item-icon"
+                  href="./icon/reason-sprite.svg#skyscrapers"
+                ></use>
+              </svg>
+              <p class="reason__item-text">
+                После успешного завершения курса, мы поможем тебе
+                трудоустроиться в Южнокорейские IT компании!
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="workplaces bg-light section-border">
+        <div class="workpaces__container container">
+          <h2 class="workplaces__ttitle section-title">
+            <span class="title-accent">Искусственный интеллект</span> - это
+            круто?
+          </h2>
+          <!-- <div class="workplaces__flex"> -->
+          <ul class="workplaces__list">
+            <li class="workplaces__item">
+              На данный момент только в Южной Корее ищут 10,000 специалистов в
+              области AI!
+            </li>
+            <li class="workplaces__item">
+              Младшие разработчики искусственного интеллекта без опыта работы
+              могут получать в Южной Корее 60,000,000 вон (51,000$) в год.
+              Специалист со средним стажем работы может получать уже около
+              100,000,000 вон (85,000$) в год.
+            </li>
+            <li class="workplaces__item">
+              В США уровень зарплат ещё выше! Младший специалист без опыта
+              работы получает в среднем 93,000$ в год. А инженер со средним
+              стажем работы получает уже больше 140,000$ в год!
+            </li>
+            <li class="workplaces__item">
+              А самое вкусное то, что твоя зарплата будет расти вместе с твоими
+              навыками. Стаж не так важен.
+            </li>
+          </ul>
+          <img
+            class="workplaces__ai"
+            src="images/AI-tablet.webp"
+            width="1920"
+            height="913"
+            alt=""
+          />
+          <img
+            class="workplaces__ai-mobile"
+            src="images/AI-mobile.webp"
+            width="992"
+            height="615"
+            alt="Изображение нейросети в виде цифрового мозга"
+          />
+
+          <button
+            class="workplaces__sing-up sing-up-btn"
+            data-modal-button="buy"
+            data-modal-speed="300"
+          >
+            Записаться на ознакомительный вебинар
+          </button>
+        </div>
+      </section>
+      <section class="rede bg-dark section-border">
+        <div class="rede__container container">
+          <h2 class="rede__title section-title">
+            <span class="title-accent">Важно</span> понимать что
+          </h2>
+          <div class="rede__content-box">
+            <article class="rede__item common-text">
+              <img
+                width="285"
+                height="83"
+                src="./images/rede/rede-1.png"
+                alt=" Голограмма в виде микросхемы в форме человеческого мозга"
+              />
+              <p class="rede__descript-top">
+                Искусственный интеллект - это не одна дисциплина, как думают
+                многие, а совокупность различных между собой направлений.
+              </p>
+            </article>
+            <article class="rede__item">
+              <img
+                width="285"
+                height="83"
+                src="./images/rede/rede-2.png"
+                alt="Мужчина сидит за ноутбуком"
+              />
+              <p class="rede__descript-top">
+                Подготовка реально хороших специалистов требует времени,
+                краткосрочные курсы эффекта не дают.
+              </p>
+            </article>
+            <article class="rede__item">
+              <p class="rede__descript-btm">
+                Большинство менторов никогда не работали над реальными
+                проектами. Они изучали все по видеоурокам и книжкам, и преподают
+                без практики, что очень печально.
+              </p>
+              <img
+                width="285"
+                height="83"
+                src="./images/rede/rede-3.png"
+                alt="Презентация в большом зале"
+              />
+            </article>
+            <article class="rede__item">
+              <p class="rede__descript-btm">
+                На многих курсах преподают готовые/идеальные кейсы без всяких
+                сложностей, поэтому студенты после таких курсов не могут решать
+                реальные задачи на работе.
+              </p>
+              <img
+                width="285"
+                height="83"
+                src="./images/rede/rede-4.png"
+                alt="Ноутбук с плавающими рядом с ним изображениями сайтов"
+              />
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="answers bg-light section-border">
+        <div class="answers__container container">
+          <h2 class="answers__title section-title">
+            Почему именно наш курс?
+            <span class="title-accent">Все просто! </span>
+          </h2>
+          <div class="answers__flex-container">
+            <ul class="answers__list">
+              <li class="answers__item common-text">
+                Объясняем сложные вещи простым и доходчивым языком.
+              </li>
+              <li class="answers__item common-text">
+                Обучаем не просто языку программирования, или одной какой-то
+                дисциплине, мы обучаем полностью всей специальности.
+              </li>
+              <li class="answers__item common-text">
+                Ознакомляем с содержанием урока только в режиме реального
+                времени. Ты сможешь сразу задать вопрос и тут же получить
+                ответы. Мы всегда будем рядом.
+              </li>
+              <li class="answers__item common-text">
+                Обучение ведет ведущий и действующий специалист в области
+                искусственного интеллекта в Южной Корее.
+              </li>
+              <li class="answers__item common-text">
+                Обучение проходит в группе по 15 человек, которая внутри делится
+                на 3 команды, и каждая команда выполняет собственный проект.
+                Таким образом, студенты смогут прочувствовать тонкости командной
+                разработки, и уже на этапе обучения окунуться в рабочую
+                атмосферу AI специалиста.
+              </li>
+            </ul>
+
+            <picture>
+              <source srcset="./images/answer.webp" />
+              <img
+                class="answers__img"
+                width="1201"
+                height="709"
+                src="./images/answer.png"
+                alt="Мозг сделанный из крупных прозрачных полигонов"
+            /></picture>
+            <img
+              class="answers__img-blick"
+              width="800"
+              height="552"
+              src="./icon/answer-blick.svg"
+              alt="Блики разбросанные по странице"
+            />
+          </div>
+          <button
+            class="answers__sing-up sing-up-btn"
+            data-modal-button="buy"
+            data-modal-speed="300"
+          >
+            Записаться на ознакомительный вебинар
+          </button>
+        </div>
+      </section>
+      <section class="curriculum bg-dark section-border">
+        <div class="curriculum__container container">
+          <h2 class="curriculum__title section-title">
+            <span class="title-accent">Что я узнаю</span> из этих курсов?
+          </h2>
+          <p class="curriculum__text">
+            Полностью весь курс состоит из 3 частей
+          </p>
+          <details name="curriculum" class="curriculum__faq" open>
+            <summary class="curriculum__summary">
+              <h3 class="curriculum__faq-title">AI - Junior Level.</h3>
+              <p class="curriculum__title-text">Продолжительность 1 год</p>
+            </summary>
+            <ol class="curriculum__faq-list">
+              <li class="curriculum__faq-item">
+                <h4 class="curriculum__title-small">Введение.</h4>
+                <p class="curriculum__faq-text">
+                  В этой секции, мы познакомимся с историей человека, который
+                  переквалифицировался в специалиста по искусственному
+                  интеллекту и отвечаем на вопрос: "Стоит ли это того, чтобы
+                  потратить 2 года на изучение искусственного интеллекта?"
+                  Также, мы разберём уроки, усвоенные специалистами, прошедших
+                  путь от младших до главных специалистов.
+                </p>
+              </li>
+              <li class="curriculum__faq-item">
+                <h4 class="curriculum__title-small">
+                  Введение в программирование.
+                </h4>
+                <p class="curriculum__faq-text">
+                  Эта секция начинается с объяснения понятий проблемы, сути и
+                  целей искусственного интеллекта. Ты узнаешь в чем разница
+                  между данными и информацией. А также что такое качество
+                  информации. Мы разберём, что такое алгоритмы, компьютерные
+                  программы и язык программирования Python, и начнём работать в
+                  интегрированной среде разработки для языка Python. Далее мы
+                  поймем суть переменных их свойства и типы. Именно с этой
+                  секции ты начнёшь писать свои первые программные коды на языке
+                  программирования Python. Мы изучим все аспекты этого
+                  удивительного языка. Далее мы разберём такие библиотеки как
+                  Numpy, Pandas и Matplotlib. В этой секции ты познакомишься со
+                  средой разработки Jupyter Notebook.
+                </p>
+              </li>
+              <li class="curriculum__faq-item">
+                <h4 class="curriculum__title-small">
+                  Введение в искусственный интеллект.
+                </h4>
+                <p class="curriculum__faq-text">
+                  Эта секция показывает нам, разницу между линейным и нелинейным
+                  программированием. Описывает процесс получение знаний. Также,
+                  ты узнаешь, в чем разница между AI, machine learning и deep
+                  learning. Также обсудим виды искусственного интеллекта, его
+                  применения и примеры.
+                </p>
+              </li>
+              <li class="curriculum__faq-item">
+                <h4 class="curriculum__title-small">
+                  Алгоритм machine learning.
+                </h4>
+                <p class="curriculum__faq-text">
+                  В этих секциях, мы подробно разберём работу алгоритмов machine
+                  learning. И ты создашь очень простую, но уже свою модель
+                  искусственного интеллекта. Также ты научишься оценивать
+                  точность моделей. В этой секции мы подробно начнём разбирать
+                  одну из библиотек искусственного интеллекта scikit learn.
+                  Здесь же мы разберём другую среду разработки, которая
+                  называется spyder.
+                </p>
+              </li>
+              <li class="curriculum__faq-item">
+                <h4 class="curriculum__title-small">
+                  Процесс разработки модели искусственного интеллекта и
+                  инженерия данных.
+                </h4>
+                <p class="curriculum__faq-text">
+                  Процесс разработки модели искусственного интеллекта и
+                  инженерия данных.
+                </p>
+              </li>
+              <li class="curriculum__faq-item">
+                <h4 class="curriculum__title-small">Отбор фичей.</h4>
+                <p class="curriculum__faq-text">
+                  В этой секции из всех данных, что у нас есть, мы научимся
+                  отбирать только те, что нам нужны для обучения искусственного
+                  интеллекта.
+                </p>
+              </li>
+              <li class="curriculum__faq-item">
+                <h4 class="curriculum__title-small">
+                  Чек лист почти для всех проектов искусственного интеллекта.
+                </h4>
+                <p class="curriculum__faq-text">
+                  В этой секции я дам чек лист действий для построения
+                  end-to-end проектов искусственного интеллекта.
+                </p>
+              </li>
+              <li class="curriculum__faq-item">
+                <h4 class="curriculum__title-small">Практические занятия.</h4>
+                <p class="curriculum__faq-text">
+                  На практических занятиях мы научим наши модели искусственного
+                  интеллекта следующим вещам: предсказывать нажатие на рекламу
+                  пользователем в фейсбуке; определять рак груди; предсказывать
+                  ухода в отставку клиентов банка; определять наличие кифоза у
+                  детей; определять положительные и отрицательные отзывы yelp;
+                  определять положительные и отрицательные отзывы на амазоне;
+                  определять спам письма; предсказывать наличие болезней сердца
+                  у пациентов; определять износ деталей на токарном станке.
+                </p>
+              </li>
+              <li class="curriculum__faq-item">
+                <h4 class="curriculum__title-small">
+                  Deep learning: Искусственные нейронные сети.
+                </h4>
+                <p class="curriculum__faq-text">
+                  В этой секции ты узнаешь, что такое deep learning и как это
+                  работает, также ты поймешь, что такое нейроны и как нейроные
+                  сети обучаются. Мы детально разберём все процессы, связанные с
+                  нейронными сетями. Ты также познакомишься с библиотекой keras,
+                  фреймворком tensorflow и средой разработки google colab.
+                </p>
+              </li>
+              <li class="curriculum__faq-item">
+                <h4 class="curriculum__title-small">
+                  Deep learning: конволюционные нейронные сети.
+                </h4>
+                <p class="curriculum__faq-text">
+                  Эта секция посвящена конволюционным нейронным сетям, которые
+                  применяются в компьютерном зрении. Мы детально разберём как
+                  искусственный интеллект распознает те или иные вещи, например,
+                  машины или яблоки.
+                </p>
+              </li>
+              <li class="curriculum__faq-item">
+                <h4 class="curriculum__title-small">Практические занятия.</h4>
+                <p class="curriculum__faq-text">
+                  На этих занятиях ты разработаешь свои нейронные сети, которые
+                  смогут: предсказывать цены автомобилей; предсказывать выходную
+                  мощность электростанций (кейс виртуальных сенсоров);
+                  предсказывать поломки насоса на основе данных из сенсоров
+                  насоса; распознавать рукописные цифры, распознавать элементы
+                  одежды, распознавать различные объекты; распознавать
+                  повреждённые автомобили; распознавать уличные дорожные знаки
+                  для беспилотных автомобилей.
+                </p>
+              </li>
+            </ol>
+          </details>
+          <details name="curriculum" class="curriculum__faq">
+            <summary class="curriculum__summary">
+              <h3 class="curriculum__faq-title">AI - Senior Level.</h3>
+              <p class="curriculum__title-text">Продолжительность 1.5 года.</p>
+            </summary>
+            <ol class="curriculum__faq-list">
+              <li class="curriculum__faq-item">
+                <h4 class="curriculum__title-small">Введение.</h4>
+                <p class="curriculum__faq-text">
+                  В этой секции, мы познакомимся с историей человека, который
+                  переквалифицировался в специалиста по искусственному
+                  интеллекту и отвечаем на вопрос: "Стоит ли это того, чтобы
+                  потратить 2 года на изучение искусственного интеллекта?"
+                  Также, мы разберём уроки, усвоенные специалистами, прошедших
+                  путь от младших до главных специалистов.
+                </p>
+              </li>
+              <li class="curriculum__faq-item">
+                <h4 class="curriculum__title-small">
+                  Введение в программирование.
+                </h4>
+                <p class="curriculum__faq-text">
+                  Эта секция начинается с объяснения понятий проблемы, сути и
+                  целей искусственного интеллекта. Ты узнаешь в чем разница
+                  между данными и информацией. А также что такое качество
+                  информации. Мы разберём, что такое алгоритмы, компьютерные
+                  программы и язык программирования Python, и начнём работать в
+                  интегрированной среде разработки для языка Python. Далее мы
+                  поймем суть переменных их свойства и типы. Именно с этой
+                  секции ты начнёшь писать свои первые программные коды на языке
+                  программирования Python. Мы изучим все аспекты этого
+                  удивительного языка. Далее мы разберём такие библиотеки как
+                  Numpy, Pandas и Matplotlib. В этой секции ты познакомишься со
+                  средой разработки Jupyter Notebook.
+                </p>
+              </li>
+              <li class="curriculum__faq-item">
+                <h4 class="curriculum__title-small">
+                  Введение в искусственный интеллект.
+                </h4>
+                <p class="curriculum__faq-text">
+                  Эта секция показывает нам, разницу между линейным и нелинейным
+                  программированием. Описывает процесс получение знаний. Также,
+                  ты узнаешь, в чем разница между AI, machine learning и deep
+                  learning. Также обсудим виды искусственного интеллекта, его
+                  применения и примеры.
+                </p>
+              </li>
+              <li class="curriculum__faq-item">
+                <h4 class="curriculum__title-small">
+                  Алгоритм machine learning.
+                </h4>
+                <p class="curriculum__faq-text">
+                  В этих секциях, мы подробно разберём работу алгоритмов machine
+                  learning. И ты создашь очень простую, но уже свою модель
+                  искусственного интеллекта. Также ты научишься оценивать
+                  точность моделей. В этой секции мы подробно начнём разбирать
+                  одну из библиотек искусственного интеллекта scikit learn.
+                  Здесь же мы разберём другую среду разработки, которая
+                  называется spyder.
+                </p>
+              </li>
+              <li class="curriculum__faq-item">
+                <h4 class="curriculum__title-small">
+                  Процесс разработки модели искусственного интеллекта и
+                  инженерия данных.
+                </h4>
+                <p class="curriculum__faq-text">
+                  Процесс разработки модели искусственного интеллекта и
+                  инженерия данных.
+                </p>
+              </li>
+              <li class="curriculum__faq-item">
+                <h4 class="curriculum__title-small">Отбор фичей.</h4>
+                <p class="curriculum__faq-text">
+                  В этой секции из всех данных, что у нас есть, мы научимся
+                  отбирать только те, что нам нужны для обучения искусственного
+                  интеллекта.
+                </p>
+              </li>
+              <li class="curriculum__faq-item">
+                <h4 class="curriculum__title-small">
+                  Чек лист почти для всех проектов искусственного интеллекта.
+                </h4>
+                <p class="curriculum__faq-text">
+                  В этой секции я дам чек лист действий для построения
+                  end-to-end проектов искусственного интеллекта.
+                </p>
+              </li>
+              <li class="curriculum__faq-item">
+                <h4 class="curriculum__title-small">Практические занятия.</h4>
+                <p class="curriculum__faq-text">
+                  На практических занятиях мы научим наши модели искусственного
+                  интеллекта следующим вещам: предсказывать нажатие на рекламу
+                  пользователем в фейсбуке; определять рак груди; предсказывать
+                  ухода в отставку клиентов банка; определять наличие кифоза у
+                  детей; определять положительные и отрицательные отзывы yelp;
+                  определять положительные и отрицательные отзывы на амазоне;
+                  определять спам письма; предсказывать наличие болезней сердца
+                  у пациентов; определять износ деталей на токарном станке.
+                </p>
+              </li>
+              <li class="curriculum__faq-item">
+                <h4 class="curriculum__title-small">
+                  Deep learning: Искусственные нейронные сети.
+                </h4>
+                <p class="curriculum__faq-text">
+                  В этой секции ты узнаешь, что такое deep learning и как это
+                  работает, также ты поймешь, что такое нейроны и как нейроные
+                  сети обучаются. Мы детально разберём все процессы, связанные с
+                  нейронными сетями. Ты также познакомишься с библиотекой keras,
+                  фреймворком tensorflow и средой разработки google colab.
+                </p>
+              </li>
+              <li class="curriculum__faq-item">
+                <h4 class="curriculum__title-small">
+                  Deep learning: конволюционные нейронные сети.
+                </h4>
+                <p class="curriculum__faq-text">
+                  Эта секция посвящена конволюционным нейронным сетям, которые
+                  применяются в компьютерном зрении. Мы детально разберём как
+                  искусственный интеллект распознает те или иные вещи, например,
+                  машины или яблоки.
+                </p>
+              </li>
+              <li class="curriculum__faq-item">
+                <h4 class="curriculum__title-small">Практические занятия.</h4>
+                <p class="curriculum__faq-text">
+                  На этих занятиях ты разработаешь свои нейронные сети, которые
+                  смогут: предсказывать цены автомобилей; предсказывать выходную
+                  мощность электростанций (кейс виртуальных сенсоров);
+                  предсказывать поломки насоса на основе данных из сенсоров
+                  насоса; распознавать рукописные цифры, распознавать элементы
+                  одежды, распознавать различные объекты; распознавать
+                  повреждённые автомобили; распознавать уличные дорожные знаки
+                  для беспилотных автомобилей.
+                </p>
+              </li>
+            </ol>
+          </details>
+          <details name="curriculum" class="curriculum__faq">
+            <summary class="curriculum__summary">
+              <h3 class="curriculum__faq-title">AI - Senior Level V2.0.</h3>
+              <p class="curriculum__title-text">Продолжительность 1.5 года.</p>
+              <div class="curriculum__warning">В разработке</div>
+            </summary>
+            <ol class="curriculum__faq-list">
+              <li class="curriculum__faq-item">
+                <h4 class="curriculum__title-small">Введение.</h4>
+                <p class="curriculum__faq-text">
+                  В этой секции, мы познакомимся с историей человека, который
+                  переквалифицировался в специалиста по искусственному
+                  интеллекту и отвечаем на вопрос: "Стоит ли это того, чтобы
+                  потратить 2 года на изучение искусственного интеллекта?"
+                  Также, мы разберём уроки, усвоенные специалистами, прошедших
+                  путь от младших до главных специалистов.
+                </p>
+              </li>
+              <li class="curriculum__faq-item">
+                <h4 class="curriculum__title-small">
+                  Введение в программирование.
+                </h4>
+                <p class="curriculum__faq-text">
+                  Эта секция начинается с объяснения понятий проблемы, сути и
+                  целей искусственного интеллекта. Ты узнаешь в чем разница
+                  между данными и информацией. А также что такое качество
+                  информации. Мы разберём, что такое алгоритмы, компьютерные
+                  программы и язык программирования Python, и начнём работать в
+                  интегрированной среде разработки для языка Python. Далее мы
+                  поймем суть переменных их свойства и типы. Именно с этой
+                  секции ты начнёшь писать свои первые программные коды на языке
+                  программирования Python. Мы изучим все аспекты этого
+                  удивительного языка. Далее мы разберём такие библиотеки как
+                  Numpy, Pandas и Matplotlib. В этой секции ты познакомишься со
+                  средой разработки Jupyter Notebook.
+                </p>
+              </li>
+              <li class="curriculum__faq-item">
+                <h4 class="curriculum__title-small">
+                  Введение в искусственный интеллект.
+                </h4>
+                <p class="curriculum__faq-text">
+                  Эта секция показывает нам, разницу между линейным и нелинейным
+                  программированием. Описывает процесс получение знаний. Также,
+                  ты узнаешь, в чем разница между AI, machine learning и deep
+                  learning. Также обсудим виды искусственного интеллекта, его
+                  применения и примеры.
+                </p>
+              </li>
+              <li class="curriculum__faq-item">
+                <h4 class="curriculum__title-small">
+                  Алгоритм machine learning.
+                </h4>
+                <p class="curriculum__faq-text">
+                  В этих секциях, мы подробно разберём работу алгоритмов machine
+                  learning. И ты создашь очень простую, но уже свою модель
+                  искусственного интеллекта. Также ты научишься оценивать
+                  точность моделей. В этой секции мы подробно начнём разбирать
+                  одну из библиотек искусственного интеллекта scikit learn.
+                  Здесь же мы разберём другую среду разработки, которая
+                  называется spyder.
+                </p>
+              </li>
+              <li class="curriculum__faq-item">
+                <h4 class="curriculum__title-small">
+                  Процесс разработки модели искусственного интеллекта и
+                  инженерия данных.
+                </h4>
+                <p class="curriculum__faq-text">
+                  Процесс разработки модели искусственного интеллекта и
+                  инженерия данных.
+                </p>
+              </li>
+              <li class="curriculum__faq-item">
+                <h4 class="curriculum__title-small">Отбор фичей.</h4>
+                <p class="curriculum__faq-text">
+                  В этой секции из всех данных, что у нас есть, мы научимся
+                  отбирать только те, что нам нужны для обучения искусственного
+                  интеллекта.
+                </p>
+              </li>
+              <li class="curriculum__faq-item">
+                <h4 class="curriculum__title-small">
+                  Чек лист почти для всех проектов искусственного интеллекта.
+                </h4>
+                <p class="curriculum__faq-text">
+                  В этой секции я дам чек лист действий для построения
+                  end-to-end проектов искусственного интеллекта.
+                </p>
+              </li>
+              <li class="curriculum__faq-item">
+                <h4 class="curriculum__title-small">Практические занятия.</h4>
+                <p class="curriculum__faq-text">
+                  На практических занятиях мы научим наши модели искусственного
+                  интеллекта следующим вещам: предсказывать нажатие на рекламу
+                  пользователем в фейсбуке; определять рак груди; предсказывать
+                  ухода в отставку клиентов банка; определять наличие кифоза у
+                  детей; определять положительные и отрицательные отзывы yelp;
+                  определять положительные и отрицательные отзывы на амазоне;
+                  определять спам письма; предсказывать наличие болезней сердца
+                  у пациентов; определять износ деталей на токарном станке.
+                </p>
+              </li>
+              <li class="curriculum__faq-item">
+                <h4 class="curriculum__title-small">
+                  Deep learning: Искусственные нейронные сети.
+                </h4>
+                <p class="curriculum__faq-text">
+                  В этой секции ты узнаешь, что такое deep learning и как это
+                  работает, также ты поймешь, что такое нейроны и как нейроные
+                  сети обучаются. Мы детально разберём все процессы, связанные с
+                  нейронными сетями. Ты также познакомишься с библиотекой keras,
+                  фреймворком tensorflow и средой разработки google colab.
+                </p>
+              </li>
+              <li class="curriculum__faq-item">
+                <h4 class="curriculum__title-small">
+                  Deep learning: конволюционные нейронные сети.
+                </h4>
+                <p class="curriculum__faq-text">
+                  Эта секция посвящена конволюционным нейронным сетям, которые
+                  применяются в компьютерном зрении. Мы детально разберём как
+                  искусственный интеллект распознает те или иные вещи, например,
+                  машины или яблоки.
+                </p>
+              </li>
+              <li class="curriculum__faq-item">
+                <h4 class="curriculum__title-small">Практические занятия.</h4>
+                <p class="curriculum__faq-text">
+                  На этих занятиях ты разработаешь свои нейронные сети, которые
+                  смогут: предсказывать цены автомобилей; предсказывать выходную
+                  мощность электростанций (кейс виртуальных сенсоров);
+                  предсказывать поломки насоса на основе данных из сенсоров
+                  насоса; распознавать рукописные цифры, распознавать элементы
+                  одежды, распознавать различные объекты; распознавать
+                  повреждённые автомобили; распознавать уличные дорожные знаки
+                  для беспилотных автомобилей.
+                </p>
+              </li>
+            </ol>
+          </details>
+          <button
+            class="curriculum__sing-up sing-up-btn"
+            data-modal-button="buy"
+            data-modal-speed="300"
+          >
+            Записаться на ознакомительный вебинар
+          </button>
+        </div>
+      </section>
+      <section class="author bg-light section-border">
+        <div class="author__container container">
+          <div class="author__photo-descript">
+            <div class="author__photo-title">Владимир Ким</div>
+            <div class="author__photo-text common-text">Ведущий специалист</div>
+          </div>
+          <div class="author__text-block">
+            <h2 class="author__title section-title">Автор курса</h2>
+            <div class="author__about common-text">
+              Основателем курса является Владимир Ким, действующий и ведущий
+              специалист в области искусственного интеллекта в Южной Корее,
+              который разрабатывал системы искусственного интеллекта для
+              компаний Samsung SDS, LG science park и LG digital park.
+            </div>
+            <div class="author__about common-text">
+              На данный момент, Владимир занимается разработкой виртуальных
+              сенсоров на основе нейронных сетей.
+            </div>
+            <div class="author__about common-text">
+              Является одним из авторов диссертации об обработке больших данных
+              для Южнокорейского института по развитию Интернета.
+            </div>
+            <div class="author__about common-text">
+              Действующий член ассоциации разработчиков программного обеспечения
+              в Южной Корее.
+            </div>
+            <div class="author__about common-text">
+              Активно участвует в R&D проектах по внедрению искусственного
+              интеллекта для государственных предприятий Южной Кореи.
+            </div>
+          </div>
+          <div class="author__photo-container">
+            <img
+              class="author__photo-img"
+              width="441"
+              height="672"
+              src="./images/author.png"
+              alt="Фото основателя курса Владимира Кима"
+            />
+            <img
+              class="author__photo-polygon"
+              width="1084"
+              height="610"
+              src="./images/author-polygon.svg"
+              alt="Изображение светящихся полупрозрачных полигонов на фоне "
+            />
+            <img
+              class="author__photo-blick"
+              width="801"
+              height="528"
+              src="./images/author-blick.svg"
+              alt="Блики разбросанные по странице"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="ad bg-dark section-border">
+        <div class="swiper__container container">
+          <div class="swiper__title">
+            <h2 class="section-title">Объявления школы</h2>
+            <button class="swiper__btn swiper__btn-up">Все объявления</button>
+          </div>
+          <div class="swiper__slider">
+            <button
+              class="swiper__slider-btn swiper__slider-btn--prev prev-first"
+              aria-label="Предыдущий слайд"
+            >
+              <svg width="62" height="62">
+                <use
+                  class="swiper__slider-btn-icon"
+                  href="./icon/ad-sprite.svg#prev"
+                ></use>
+              </svg>
+            </button>
+            <div class="swiper swiper__first">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="swiper__item">
+                    <time class="swiper__item-time" datetime="2021-06-24"
+                      >24 мая 2021</time
+                    >
+                    <picture
+                      ><source srcset="./images/slider/slider-1.webp" />
+                      <img
+                        src="./images/slider/slider-1.png"
+                        class="swiper__slide-img"
+                        width="387"
+                        height="236"
+                        alt="Рука нажимающая на клавиатуру"
+                    /></picture>
+                    <div class="swiper__item-title">
+                      Заголовок объявления из несколькиз слов
+                    </div>
+                    <div class="swiper__item-descript">
+                      Искусственный интеллект - это не одна дисциплина, как
+                      думают многие, а совокупность различных между собой
+                      направлений.
+                    </div>
+                    <a class="swiper__item-link" href="./article.html"
+                      >Подробнее</a
+                    >
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper__item">
+                    <time class="swiper__item-time" datetime="2021-06-24"
+                      >24 мая 2021</time
+                    >
+                    <picture
+                      ><source srcset="./images/slider/slider-2.webp" />
+                      <img
+                        src="./images/slider/slider-2.png"
+                        class="swiper__slide-img"
+                        width="387"
+                        height="236"
+                        alt="Два ноутбука и лист с заметками"
+                    /></picture>
+                    <div class="swiper__item-title">
+                      Заголовок объявления из несколькиз слов
+                    </div>
+                    <div class="swiper__item-descript">
+                      Искусственный интеллект - это не одна дисциплина, как
+                      думают многие, а совокупность различных между собой
+                      направлений.
+                    </div>
+                    <a class="swiper__item-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper__item">
+                    <time class="swiper__item-time" datetime="2021-06-24"
+                      >24 мая 2021</time
+                    >
+                    <picture
+                      ><source srcset="./images/slider/slider-3.webp" />
+                      <img
+                        src="./images/slider/slider-3.png"
+                        class="swiper__slide-img"
+                        width="387"
+                        height="236"
+                        alt="Трое людей участвуют в обсуждении"
+                    /></picture>
+                    <div class="swiper__item-title">
+                      Заголовок объявления из несколькиз слов
+                    </div>
+                    <div class="swiper__item-descript">
+                      Искусственный интеллект - это не одна дисциплина, как
+                      думают многие, а совокупность различных между собой
+                      направлений.
+                    </div>
+                    <a class="swiper__item-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper__item">
+                    <time class="swiper__item-time" datetime="2021-06-24"
+                      >24 мая 2021</time
+                    >
+                    <picture
+                      ><source srcset="./images/slider/slider-4.webp" />
+                      <img
+                        src="./images/slider/slider-4.png"
+                        class="swiper__slide-img"
+                        width="387"
+                        height="236"
+                        alt="Девушка с книгой и ноутбуком"
+                    /></picture>
+                    <div class="swiper__item-title">
+                      Заголовок объявления из несколькиз слов
+                    </div>
+                    <div class="swiper__item-descript">
+                      Искусственный интеллект - это не одна дисциплина, как
+                      думают многие, а совокупность различных между собой
+                      направлений.
+                    </div>
+                    <a class="swiper__item-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="swiper__slider-btn swiper__slider-btn--next next-first"
+              aria-label="Следующий слайд"
+            >
+              <svg width="62" height="62">
+                <use
+                  class="swiper__slider-btn-icon"
+                  href="./icon/ad-sprite.svg#prev"
+                ></use>
+              </svg>
+            </button>
+          </div>
+          <button class="swiper__btn swiper__btn-down">Все объявления</button>
+        </div>
+      </section>
+      <section class="vacancies bg-light section-border">
+        <div class="swiper__container container">
+          <div class="swiper__title">
+            <h2 class="section-title">Вакансии</h2>
+            <button class="swiper__btn swiper__btn-up">Все вакансии</button>
+          </div>
+          <div class="swiper__slider">
+            <button
+              class="swiper__slider-btn swiper__slider-btn--prev prev-second"
+              aria-label="Предыдущий слайд"
+            >
+              <svg width="62" height="62">
+                <use
+                  class="swiper__slider-btn-icon"
+                  href="./icon/ad-sprite.svg#prev"
+                ></use>
+              </svg>
+            </button>
+            <div class="swiper swiper__second">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="swiper__item">
+                    <picture
+                      ><source srcset="./images/slider/slider-4.webp" />
+                      <img
+                        src="./images/slider/slider-4.png"
+                        class="swiper__slide-img"
+                        width="387"
+                        height="236"
+                        alt="Рука нажимающая на клавиатуру"
+                    /></picture>
+                    <div class="swiper__item-title">
+                      Требуется администратор
+                    </div>
+                    <div class="swiper__item-descript">
+                      Опыт работы . . . . . . . . . . . . . . . . . . . . . . .
+                      . . . . . . . от 1 года Образование . . . . . . . . . . .
+                      . . . . . . . . . . . . . . . . . . . Высшее Возраст . . .
+                      . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                      . . . 21-35 лет
+                    </div>
+                    <a class="swiper__item-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper__item">
+                    <picture
+                      ><source srcset="./images/slider/slider-3.webp" />
+                      <img
+                        src="./images/slider/slider-3.png"
+                        class="swiper__slide-img"
+                        width="387"
+                        height="236"
+                        alt="Два ноутбука и лист с заметками"
+                    /></picture>
+                    <div class="swiper__item-title">Требуется менеджер</div>
+                    <div class="swiper__item-descript">
+                      Опыт работы . . . . . . . . . . . . . . . . . . . . . . .
+                      . . . . . . . от 1 года Образование . . . . . . . . . . .
+                      . . . . . . . . . . . . . . . . . . . Высшее Возраст . . .
+                      . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                      . . . 21-35 лет
+                    </div>
+                    <a class="swiper__item-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper__item">
+                    <picture
+                      ><source srcset="./images/slider/slider-2.webp" />
+                      <img
+                        src="./images/slider/slider-2.png"
+                        class="swiper__slide-img"
+                        width="387"
+                        height="236"
+                        alt="Трое людей участвуют в обсуждении"
+                    /></picture>
+                    <div class="swiper__item-title">
+                      Требуется администратор
+                    </div>
+                    <div class="swiper__item-descript">
+                      Опыт работы . . . . . . . . . . . . . . . . . . . . . . .
+                      . . . . . . . от 1 года Образование . . . . . . . . . . .
+                      . . . . . . . . . . . . . . . . . . . Высшее Возраст . . .
+                      . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                      . . . 21-35 лет
+                    </div>
+                    <a class="swiper__item-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper__item">
+                    <picture
+                      ><source srcset="./images/slider/slider-1.webp" />
+                      <img
+                        src="./images/slider/slider-1.png"
+                        class="swiper__slide-img"
+                        width="387"
+                        height="236"
+                        alt="Девушка с книгой и ноутбуком"
+                    /></picture>
+                    <div class="swiper__item-title">Требуется менеджер<</div>
+                    <div class="swiper__item-descript">
+                      Опыт работы . . . . . . . . . . . . . . . . . . . . . . .
+                      . . . . . . . от 1 года Образование . . . . . . . . . . .
+                      . . . . . . . . . . . . . . . . . . . Высшее Возраст . . .
+                      . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                      . . . 21-35 лет
+                    </div>
+                    <a class="swiper__item-link" href="#">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="swiper__slider-btn swiper__slider-btn--next next-second"
+              aria-label="Следующий слайд"
+            >
+              <svg width="62" height="62">
+                <use
+                  class="swiper__slider-btn-icon"
+                  href="./icon/ad-sprite.svg#prev"
+                ></use>
+              </svg>
+            </button>
+          </div>
+          <button class="swiper__btn swiper__btn-down">Все вакансии</button>
+        </div>
+      </section>
+    </main>
+    <footer class="footer bg-light">
+      <div class="container">
+        <div class="footer__header">
+          <a href="#" class="footer__logo"
+            ><img
+              src="./icon/logo.svg"
+              width="287"
+              height="86"
+              alt="Логотип онлайн академии VeraVla edu"
+          /></a>
+          <div class="footer__media">
+            <div class="footer__contacts">
+              <a href="mailto:veravlaedu@gmail.com" class="footer__email"
+                ><svg class="footer__phone-img" width="25" height="25">
+                  <use href="./icon/footer-sprite.svg#letter"></use>
+                </svg>
+                veravlaedu@gmail.com
+              </a>
+
+              <a href="tel:+821075269192" class="footer__phone"
+                ><svg class="header__phone-img" width="25" height="25">
+                  <use href="./icon/phone-icon.svg"></use>
+                </svg>
+                + 82 (10) 7526-9192
+              </a>
+            </div>
+            <div class="footer__social">
+              <p class="footer__social-text">Мы в соц сетях</p>
+              <a href="#" class="footer__social-icons"
+                ><svg class="footer__social-icons" width="24" height="24">
+                  <use
+                    href="./icon/footer-sprite.svg#facebook"
+                    alt="facebook"
+                  ></use>
+                </svg>
+              </a>
+
+              <a href="#" class="footer__social-icons">
+                <svg class="footer__social-icons" width="30" height="30">
+                  <use href="./icon/footer-sprite.svg#N" alt="N?"></use>
+                </svg>
+              </a>
+
+              <a href="#" class="footer__social-icons">
+                <svg class="footer__social-icons" width="26" height="26">
+                  <use
+                    href="./icon/footer-sprite.svg#youtube"
+                    alt="youtube"
+                  ></use>
+                </svg>
+              </a>
+
+              <a href="#" class="footer__social-icons">
+                <svg class="footer__social-icons" width="30" height="30">
+                  <use
+                    href="./icon/footer-sprite.svg#whatsapp"
+                    alt="whatsapp"
+                  ></use>
+                </svg>
+              </a>
+
+              <a href="#" class="footer__social-icons">
+                <svg class="footer__social-icons" width="31" height="25">
+                  <use href="./icon/footer-sprite.svg#kakao" alt="kakao"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <span> Copyright © 2021 VeraVla edu. All rights reserved</span>
+      </div>
+      <div class="footer__footer container">
+        <span class="footer__footer-dev">developed by afreeca</span>
+        <picture
+          ><source srcset="./images/afreeca-logo.webp" />
+          <img
+            src="./images/afreeca-logo.png"
+            class="footer__footer-img"
+            width="124"
+            height="37"
+            loading="lazy"
+            alt="Лого Afreeca"
+        /></picture>
+      </div>
+    </footer>
+
+    <div class="modal">
+      <div class="modal__window" data-modal-window="buy">
+        <button
+          class="modal__close"
+          aria-label="Закрыть"
+          title="Закрыть"
+          data-modal-close
+        >
+          <svg width="18" height="18">
+            <use href="./icon/main-sprite.svg#cross"></use>
+          </svg>
+        </button>
+        <div>
+          <h3 class="modal__title">
+            <span class="title-accent">Записаться</span> на ознакомительный
+            вебинар
+          </h3>
+        </div>
+        <form action="" class="modal__sign-up-form">
+          <label class="modal__sign-up-label"
+            >Ваше ФИО:<input
+              class="modal__sign-up-input"
+              type="text"
+              placeholder="Иван Иванович Иванов"
+              name="name"
+              required
+          /></label>
+          <label class="modal__sign-up-label"
+            >Номер телефона:<input
+              class="modal__sign-up-input"
+              type="tel"
+              placeholder="+7 (___) ___-__-__"
+              name="phone"
+              required
+          /></label>
+          <label class="modal__sign-up-label"
+            >Ваш e-mail:<input
+              class="modal__sign-up-input"
+              type="email"
+              placeholder="name@gmail.com"
+              name="name"
+              required
+          /></label>
+          <label class="modal__sign-up-label"
+            >Выберите дату и время вебинара:<input
+              class="modal__sign-up-input"
+              type="text"
+              placeholder="2021-12-05 18.00"
+              list="time-list"
+              name="email"
+              required
+          /></label>
+          <datalist id="time-list">
+            <option value="2021-12-05 18.00"></option>
+            <option value="2021-12-05 18.00"></option>
+            <option value="2021-12-05 18.00"></option>
+            <option value="2021-12-05 18.00"></option>
+            <option value="2021-12-05 18.00"></option>
+          </datalist>
+          <button
+            class="modal__btn sing-up-btn"
+            data-modal-button="buy"
+            data-modal-speed="300"
+          >
+            Записаться
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div
+      id="scrollToTopBtn"
+      class="scroll-to-top"
+      role="button"
+      tabindex="0"
+      aria-label="Прокрутить наверх"
+    >
+      <a href="#header" class="scroll-top__text">Подняться вверх</a>
+      <div class="scroll-top__container">
+        <div class="scroll-top__pulse"></div>
+        <div class="scroll-top__border">
+          <div class="scroll-top__img">
+            <svg class="" width="15" height="30">
+              <use href="./icon/main-sprite.svg#arrow-up"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+        // Функция проверки позиции прокрутки
+        function checkScrollPosition() {
+          // Получаем общую высоту документа
+          const documentHeight = document.documentElement.scrollHeight;
+          // Получаем высоту видимой области
+          const windowHeight = window.innerHeight;
+          // Получаем текущую позицию прокрутки
+          const scrollPosition = window.scrollY || window.pageYOffset;
+
+          // Вычисляем середину страницы (половина от общей высоты минус высота окна)
+          const halfPagePosition = (documentHeight - windowHeight) / 2;
+
+          // Показываем кнопку, если прокрутили больше половины страницы
+          if (scrollPosition > halfPagePosition) {
+            scrollToTopBtn.classList.add("visible");
+          } else {
+            scrollToTopBtn.classList.remove("visible");
+          }
+        }
+
+        // Плавная прокрутка наверх
+        function scrollToTop() {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        }
+
+        // Обработчик клика по кнопке
+        scrollToTopBtn.addEventListener("click", scrollToTop);
+
+        // Слушаем событие прокрутки
+        window.addEventListener("scroll", checkScrollPosition);
+
+        // Запускаем проверку при загрузке страницы
+        checkScrollPosition();
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+@import url(./global/normalize.css);
+@import url(./global/fonts.css);
+@import url(./global/vars.css);
+@import url(./global/global.css);
+
+.article {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  inset: 0;
+  z-index: var(--layer-0);
+  width: 100%;
+  height: 100%;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: var(--overlay);
+  text-align: center;
+  background: rgba(8, 38, 43, 0.5);
+}
+
+.article__container {
+  margin-block: 50px;
+  vertical-align: middle;
+  border-radius: 12px;
+  background-color: var(--bg-color);
+
+  box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.53);
+  padding: 54px 83px 65px 80px;
+  background: linear-gradient(286.41deg, #033958 3.34%, #0f6b78 88.3%);
+  padding: 80px;
+}
+
+.article__title {
+  padding-bottom: 30px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 33px;
+  color: var(--main-color);
+}
+
+.article__top {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  /* align-items: end; */
+}
+
+.article__top-text {
+  max-width: 430px;
+  padding-right: 35px;
+}
+.swiper__item {
+  position: relative;
+  max-width: 387px;
+  text-align: left;
+}
+
+.swiper__item-time {
+  position: absolute;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 175%;
+  color: var(--main-color);
+  top: 21px;
+  right: 25px;
+}
+
+.swiper__item-time::before {
+  content: "";
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  background-image: url("../../icon/calendar.svg");
+  margin-right: 5px;
+}
+
+.swiper__item-title {
+  font-family: var(--font-family);
+  font-weight: 750;
+  font-size: 16px;
+  line-height: 131%;
+  color: var(--main-color);
+  padding-top: 29px;
+  padding-bottom: 19px;
+}
+.swiper__item-descript {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 140%;
+  background: linear-gradient(
+    180deg,
+    var(--main-color) 65.96%,
+    rgba(105, 104, 104, 0) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.swiper__item-link {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 175%;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #4abcec;
+}

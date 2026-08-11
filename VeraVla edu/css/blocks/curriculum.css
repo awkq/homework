@@ -1,0 +1,162 @@
+.curriculum {
+  overflow-x: clip;
+}
+
+.curriculum__title {
+  padding-top: 103px;
+}
+
+/* .curriculum__background {
+  background: linear-gradient(
+    286.41deg,
+    rgba(2, 35, 53, 0.8) 3.39%,
+    rgba(12, 55, 61, 0.8) 88.78%
+  );
+  transform: rotate(-180deg);
+} */
+
+.curriculum__summary {
+  position: relative;
+  border-radius: 6px;
+  list-style: none;
+  background: linear-gradient(286.41deg, #073447 3.8%, #08262b 92.54%);
+  display: flex;
+
+  padding-block: 18px;
+  padding-left: 14px;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+@media (width>=768px) {
+  .curriculum__summary {
+    align-items: center;
+  }
+}
+
+@media (width<768px) {
+  .curriculum__summary {
+    flex-direction: column;
+  }
+}
+
+.curriculum__summary::after {
+  content: "";
+  position: absolute;
+
+  right: 15px;
+  top: 12px;
+
+  width: 32px;
+  height: 32px;
+  background: url("../../icon/arrow-down.svg");
+  transition: var(--transition-time);
+}
+
+details[open] .curriculum__summary::after {
+  background: url("../../icon/arrow-open.svg");
+}
+
+.curriculum__faq-list {
+  list-style: none;
+  counter-reset: counter;
+  padding-left: 0;
+}
+
+.curriculum__faq-item::before {
+  content: counter(counter);
+  position: absolute;
+  padding-left: 8px;
+  left: 0;
+  top: 7%;
+  transform: translateY(-50%);
+  width: 27px;
+  height: 27px;
+  background-image: url("../../icon/curriculum-number-marker.svg");
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+
+  font-family: var(--font-family);
+  font-weight: 750;
+  font-size: 14px;
+  line-height: 150%;
+  color: #08262b;
+}
+
+.curriculum__faq-item {
+  counter-increment: counter;
+  position: relative;
+  padding-left: 45px;
+  padding-bottom: 40px;
+}
+
+.curriculum__text {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--main-color);
+  padding-bottom: 27px;
+  padding-top: 32px;
+}
+
+.curriculum__faq-title::before {
+  content: "";
+  display: inline-block;
+  flex-shrink: 0;
+  width: 26px;
+  height: 16px;
+  background-image: url("../../icon/curriculum-marker.svg");
+  /* background-size: contain; */
+  background-repeat: no-repeat;
+  border-radius: 100%;
+  margin-right: 16px;
+}
+
+.curriculum__faq-title {
+  font-family: var(--font-family);
+  font-weight: 750;
+  font-size: 20px;
+  line-height: 105%;
+  color: var(--main-color);
+  padding-left: 7px;
+}
+.curriculum__title-text {
+  padding-left: 10px;
+  font-weight: 500;
+  font-size: 15px;
+  color: #08b1b9;
+}
+
+.curriculum__title-small {
+  font-weight: 750;
+  font-size: 16px;
+  line-height: 131%;
+  color: #4abcec;
+  padding-bottom: 14px;
+}
+
+.curriculum__faq-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 131%;
+  color: var(--main-color);
+}
+
+.curriculum__warning {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 162%;
+  text-transform: uppercase;
+  color: #08262b;
+  background-color: #00e0ff;
+  padding: 0 4px;
+  max-width: 104px;
+}
+
+.curriculum__sing-up {
+  margin-top: 59px;
+  margin-bottom: 109px;
+}
