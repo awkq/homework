@@ -123,6 +123,7 @@ switch (deliveryType) {
     break;
   default:
     alert("Неверный тип доставки");
+    deliveryType = NaN;
     break;
 }
 // 5. Расчёт итоговой стоимости доставки:
