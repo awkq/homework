@@ -64,10 +64,8 @@ const findFirstEven = function (start, end) {
   for (start; start <= end; start++) {
     if (start % 2 == 0) {
       return start;
-      break;
     } else if (start == end) {
       return "Чётных чисел нет";
-      break;
     }
   }
 };
