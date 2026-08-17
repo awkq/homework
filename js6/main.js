@@ -51,6 +51,8 @@ function first(arr, n) {
   const newArr = [];
   if (n == 0) {
     return [];
+  } else if (arr.length > n) {
+    console.error(`не может быть больше длинны массива: ${arr.length}`);
   } else if (n == undefined) {
     newArr.push({ ...arr.at(-1) });
     return newArr;
