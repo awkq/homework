@@ -22,7 +22,7 @@ const getUserAverageAge = (array) => {
   for (let i = 0; i < array.length; i++) {
     sum += array[i].age;
   }
-  sum /= users.length;
+  sum /= array.length;
   return sum;
 };
 
@@ -35,7 +35,7 @@ const getAllAdmins = (array) => {
   const admins = [];
   for (let i = 0; i < array.length; i++) {
     if (array[i].isAdmin === true) {
-      admins.push({ ...array[i] });
+      admins.push(array[i]);
     }
     // console.log(admins);
   }
@@ -49,12 +49,13 @@ console.log(getAllAdmins(users));
 
 function first(arr, n) {
   const newArr = [];
-  if (n == 0) {
+  if (n === 0) {
     return [];
-  } else if (arr.length > n) {
+  } else if (n > arr.length) {
     console.error(`не может быть больше длинны массива: ${arr.length}`);
-  } else if (n == undefined) {
-    newArr.push({ ...arr.at(-1) });
+    return;
+  } else if (n === undefined) {
+    newArr.push(arr[0]);
     return newArr;
   }
   for (let i = 0; i < n; i++) {
