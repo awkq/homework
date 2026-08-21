@@ -9,9 +9,9 @@ const errTodoNotFound = (id) => {
 };
 
 const getNewTodoId = (todos) =>
-  todos.reduce((MaxId, todo) => Math.max(MaxId, todo[todoKeys.id]), 0) + 1;
+  todos.reduce((maxId, todo) => Math.max(maxId, todo[todoKeys.id]), 0) + 1;
 
-const createToDo = (todos, text) => {
+const createTodo = (todos, text) => {
   const newTodo = {
     [todoKeys.id]: getNewTodoId(todos),
     [todoKeys.text]: text,
@@ -22,12 +22,12 @@ const createToDo = (todos, text) => {
 };
 
 const completeTodoById = (todos, id) => {
-  const todo = todos.find((todo) => todo.id === id);
+  const todo = todos.find((todo) => todo[todoKeys.id] === id);
   if (!todo) {
     errTodoNotFound(id);
     return null;
   }
-  todo[todoKeys.isCompleted] = !todos[todoKeys.isCompleted];
+  return (todo[todoKeys.isCompleted] = !todo[todoKeys.isCompleted]);
 };
 
 const deleteTodoById = (todos, id) => {
@@ -40,5 +40,5 @@ const deleteTodoById = (todos, id) => {
   //   todos.splice(id - 1, 1);
   return todos;
 };
-createToDo(todos, "Новвая здач");
+createTodo(todos, "Новвая здач");
 console.log(todos);
