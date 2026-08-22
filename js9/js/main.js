@@ -75,6 +75,9 @@ const createTodoElement = (text) => {
 //   );
 // };
 // Создаем функцию handleCreateTodo(todos, text), которая будет вызывать createTodo и createTodoElement
-
+const handleCreateTodo = (todos, text) => {
+  createTodo(todos, text);
+  createTodoElement(text);
+};
 //
 // };
